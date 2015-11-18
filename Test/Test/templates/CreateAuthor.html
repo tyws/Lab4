@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+	<h1 align="center">创建作者</h1>
+	{% if error %}
+        <p>请输入完整信息！</p>
+    {% endif %}
+	<table align="center">
+		<form method="post" action="">
+			<tr><td>作者ID:<input type="text" name="AuthorID"></td></tr>
+			<tr><td>名字:<input type="text" name="Name"></td></tr>
+			<tr><td>年龄:<input type="text" name="Age"></td></tr>
+			<tr><td>国籍:<input type="text" name="Country"></td></tr>
+			<tr><td><input type="submit" value="创建"></td></tr>
+		</form>
+	</table>
+	<p align="center"><a href="/books/">返回</a>  <a href="/createbook/">继续创建新书</a></p>
+ </body>
+</html>

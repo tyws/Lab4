@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <h1 align="center">图书管理系统</h1>
+  <div id="" class="">
+	<form method="get" action="">
+      <p align="center"><input type="text" name="search" value="请输入作者名字进行查询"><input type="submit" value="查询"></p>
+	</form>
+  </div>
+  {%for book in books%}
+  <table align="center">
+  <tr>
+	<td  width="400"><a href="/book/{{book.ISBN}}">{{book.Title}}</a></td>
+	<td>
+		<form method="post" action="/update/{{book.ISBN}}">
+		  <input type="submit" value="更新">
+		</form>
+	</td>
+	<td>
+		<form method="post" action="">
+		  <input type="hidden" name="delete" value={{book.ISBN}}><input type="submit" value="删除">
+		</form>
+	</td>
+  </tr>
+  </table>
+  {%endfor%}
+  <p align="center"><a href="/createbook/">新建图书</a></p>
+ </body>
+</html>
