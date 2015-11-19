@@ -3,6 +3,7 @@ from django.conf.urls import patterns, include, url
 #from Test.BookManagement import views
 #from django.contrib import admin
 #admin.autodiscover()
+#change3
 
 urlpatterns = patterns('BookManagement.views',
     # Examples:
