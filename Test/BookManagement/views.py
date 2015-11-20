@@ -4,6 +4,7 @@ from django.shortcuts import render_to_response
 from BookManagement.models import *
 
 # Create your views here.
+#change 7
 def Books(request):
     books = []
     if 'search' in request.GET and request.GET['search']:

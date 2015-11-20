@@ -1,6 +1,7 @@
-﻿from django.db import models
+from django.db import models
 
 # Create your models here.
+#change 6
 
 class Book(models.Model):
     ISBN = models.AutoField(primary_key=True)

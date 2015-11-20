@@ -4,6 +4,7 @@ from django.conf.urls import patterns, include, url
 #from django.contrib import admin
 #admin.autodiscover()
 #change3
+#change5
 
 urlpatterns = patterns('BookManagement.views',
     # Examples:
